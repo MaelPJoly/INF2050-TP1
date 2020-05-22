@@ -17,9 +17,7 @@ public class DiskFile {
         File f = new File(filePath);
         FileUtils.writeStringToFile(f, content, "UTF-8");
     }
-
     // Fonction pour générer un JSON agréable à lire.
-    private static void saveAsIndentedJsonFile(JSObject outputList) throws IOException {
-        DiskFile.saveStringIntoFile("json/output-pretty.json", outputList.toString());
+    // private static void saveAsIndentedJsonFile(JSObject outputList) throws IOException {
+     //   DiskFile.saveStringIntoFile((args[1]), outputList.toString());
     }
-}

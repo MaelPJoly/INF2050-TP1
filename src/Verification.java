@@ -6,6 +6,7 @@ public class Verification {
     public boolean verificationClient(Client client) {
         boolean response = false;
 
+
         // Verification si une personne a moins de 18 ans, elle n'est pas éligible à l'assurance
         if (client.getAge() >= 18) {
 
