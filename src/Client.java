@@ -64,8 +64,20 @@ private boolean alcool;
         this.alcool = alcool;
     }
 
-    public Client(String nom, int genre, int age, boolean tabac, boolean cannabis, boolean alcool) {
-        this.nom = nom;
+    public Client() {
+    }
+
+    public Client(String nom, int genre, int age, boolean tabac, boolean cannabis, boolean alcool) throws Exception {
+        if (nom == null ) {
+            throw new Exception ("Nom invalide");
+        }
+        if (genre < 0 ) {
+            throw new Exception ("Nom invalide");
+        }
+        if (age < 0 ) {
+            throw new Exception ("Nom invalide");
+        }
+            this.nom = nom;
         this.genre = genre;
         this.age = age;
         this.tabac = tabac;
@@ -73,12 +85,6 @@ private boolean alcool;
         this.alcool = alcool;
     }
 
-    public Map<String, Boolean> mapFumeur (boolean tabac, boolean cannabis ) {
-        Map<String, Boolean> mapFumeur = new HashMap<>();
-        mapFumeur.put("tabac", tabac);
-        mapFumeur.put("cannabis", cannabis);
-        return mapFumeur;
-    }
 
     @Override
     public String toString() {

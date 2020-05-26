@@ -1,8 +1,8 @@
-{"nom": "Jacques Berger",
-  "genre":0,
-  "age": 18,
+{"nom": "Pierre" ,
+  "genre":2,
+  "age": 85,
   "fumeur": {
     "tabac": false,
     "cannabis": true
   },
-  "alcool": true}
+  "alcool": false}
